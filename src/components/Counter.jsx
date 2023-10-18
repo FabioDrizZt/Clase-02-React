@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useState } from 'react'
 
-export default function Counter() {
-  const [count, setCount] = useState(0);
-  const emojis = ["😊", "🚀", "🎉", "❤️", "🌟"];
+export default function Counter({init}) {
+  const [count, setCount] = useState(init)
+  const emojis = ['😊', '🚀', '🎉', '❤️', '🌟']
 
   const handleIncrement = () => {
-    setCount((prevState) => prevState + 1);
-  };
+    setCount((prevState) => prevState + 1)
+  }
 
   return (
     <div>
@@ -15,5 +15,5 @@ export default function Counter() {
       <p>Counter: {count}</p>
       <button onClick={handleIncrement}>Incrementar</button>
     </div>
-  );
+  )
 }

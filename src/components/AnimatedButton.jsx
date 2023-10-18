@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const Title = styled.h1`
   font-weight: bold;
   color: deeppink;
   text-align: center;
   font-size: 2rem;
-`;
+`
 
 const StyledButton = styled.button`
   font-size: 1.5em;
@@ -21,15 +21,15 @@ const StyledButton = styled.button`
     background-color: #e74c3c;
     transform: scale(1.1);
   }
-`;
+`
 
 export default function AnimatedButton() {
   return (
     <div>
       <Title>Botoncito animado !</Title>
-      <StyledButton onClick={() => console.log("click")}>
+      <StyledButton onClick={() => console.log('click')}>
         Click me!
       </StyledButton>
     </div>
-  );
+  )
 }
